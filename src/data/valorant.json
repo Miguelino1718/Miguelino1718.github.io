@@ -1,0 +1,20 @@
+{
+  "players": [
+    {
+      "name": "Miguel",
+      "riotId": "Xpels#9444",
+      "peakRank": "Oro 3",
+      "mainAgent": "Fénix",
+      "agentId": "phoenix",
+      "trackerUrl": "https://tracker.gg/valorant/profile/riot/Xpels%239444/overview"
+    },
+    {
+      "name": "Mari",
+      "riotId": "KuromiTactico#òwó",
+      "peakRank": "Plata 2",
+      "mainAgent": "Clove",
+      "agentId": "clove",
+      "trackerUrl": "https://tracker.gg/valorant/profile/riot/KuromiTactico%23%C3%B2w%C3%B3/overview?platform=pc&playlist=competitive"
+    }
+  ]
+}

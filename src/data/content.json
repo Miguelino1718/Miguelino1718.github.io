@@ -1,0 +1,81 @@
+{
+  "siteTitle": "Para mi Marilinda 💛",
+  "subtitle": "Un lugarcito para nuestras risas, recuerdos y todas las historias que todavía nos esperan.",
+  "dedication": "Para Mari, con muchísimo cariño. Hice este lugar para guardar los pequeños momentos que hacen especiales nuestros días. Y porque todavía nos quedan muchas historias por escribir. 💛",
+  "startDate": "",
+  "people": [
+    {
+      "name": "Miguel",
+      "tagline": "El que quiso guardar cada recuerdo bonito.",
+      "description": "Aquí puedes escribir una pequeña descripción de ti.",
+      "image": ""
+    },
+    {
+      "name": "Mari",
+      "tagline": "La Mariloca que hace más bonitos los días.",
+      "description": "Aquí puedes escribir las cosas que más admiras de Mari.",
+      "image": ""
+    }
+  ],
+  "timeline": [
+    {
+      "id": "r1",
+      "date": "",
+      "title": "El comienzo de nuestra historia",
+      "description": "Escribe aquí cómo empezó todo.",
+      "image": ""
+    },
+    {
+      "id": "r2",
+      "date": "",
+      "title": "Un momento que quiero recordar",
+      "description": "Aquí puedes guardar una anécdota especial.",
+      "image": ""
+    }
+  ],
+  "gallery": [
+    {
+      "id": "g1",
+      "title": "Nuestro primer recuerdo",
+      "type": "photo",
+      "src": "",
+      "caption": "Aquí irá una de nuestras fotos favoritas."
+    },
+    {
+      "id": "g2",
+      "title": "Una partida para recordar",
+      "type": "video",
+      "src": "",
+      "caption": "Guarda aquí un clip o un video."
+    }
+  ],
+  "letters": [
+    {
+      "id": "c1",
+      "title": "Una cartita para ti",
+      "subtitle": "Ábrela cuando quieras sonreír",
+      "body": "Holaaa, Mariloca 💛\n\nEste es un pequeño espacio que hice pensando en ti. Espero que algún día podamos mirar hacia atrás y sonreír con todos los recuerdos que guardamos aquí.\n\nCon cariño, Miguel."
+    },
+    {
+      "id": "c2",
+      "title": "Para un día difícil",
+      "subtitle": "Un abrazo en forma de palabras",
+      "body": "Quería recordarte que espero que hoy encuentres aunque sea una pequeña razón para sonreír. 💛"
+    }
+  ],
+  "songs": [
+    {
+      "id": "s1",
+      "title": "Nuestra primera canción",
+      "artist": "Agrega aquí el artista",
+      "url": "",
+      "note": "Cuéntale por qué esta canción te recuerda a ella."
+    }
+  ],
+  "wishes": [
+    "Guardar más recuerdos juntos",
+    "Ver nuestras fotos dentro de unos años",
+    "Seguir descubriendo canciones bonitas"
+  ],
+  "footerMessage": "Esta página no tiene un final, porque todavía nos quedan muchas historias por escribir."
+}
