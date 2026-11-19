@@ -229,8 +229,8 @@ export default function App() {
             <h1>
               Para mi
               <br />
-              <em>Marilinda 💛</em>
-              <span className="gold-dot">.</span>
+              <em>Marilinda</em>
+              <span className="gold-dot">♡</span>
             </h1>
 
 
