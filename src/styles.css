@@ -1054,7 +1054,7 @@ p {
   transform: translateY(-50%);
   color: #FFE0A6;
   font-family: Arial, sans-serif;
-  font-size: 65px;
+  font-size: 110px;
   font-weight: 400;
   line-height: 1;
   text-shadow: 0 2px 12px rgba(255, 224, 166, .3);
@@ -1143,7 +1143,10 @@ p {
   .hero { padding: 65px 15px 75px; }
   .hero h1 { font-size: clamp(54px, 11vw, 85px); margin-bottom: 14px; }
   .hero h1 em { font-size: clamp(55px, 11.5vw, 95px); }
-  .hero .hero-title-second .gold-dot { font-size: clamp(28px, 7vw, 40px); margin-left: 4px; }
+   .hero .hero-title-second .gold-dot {
+      font-size: clamp(45px, 10vw, 65px);
+      margin-left: 5px;
+   }
   .hero .hero-heart { font-size: 48px; }
   .hero .hero-label { font-size: 9px; }
   .hero .hero-inner > p { max-width: 360px; margin: 10px auto 20px; font-size: 16px; }
