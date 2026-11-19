@@ -945,11 +945,11 @@ p {
   background: #241f2b;
 }
 
-/* Imagen de fondo (en App.jsx está dentro de .hero-inner) */
+/* Imagen de fondo: hija directa de .hero, cubre toda la sección */
 .hero .hero-photo {
   position: absolute;
   inset: 0;
-  z-index: -1;
+  z-index: 0;
   width: 100%;
   height: 100%;
   margin: 0;
@@ -978,6 +978,7 @@ p {
     rgba(12, 10, 20, .38) 0%,
     rgba(12, 10, 20, .44) 55%,
     rgba(12, 10, 20, .64) 100%);
+  pointer-events: none;
 }
 
 .hero .hero-inner {
@@ -1118,6 +1119,9 @@ p {
   position: absolute;
   z-index: 2;
   bottom: 18px;
+  left: 0;
+  width: 100%;
+  text-align: center;
   color: #FFF4DF;
   font-size: 11px;
   text-shadow: 0 2px 8px rgba(0, 0, 0, .8);
