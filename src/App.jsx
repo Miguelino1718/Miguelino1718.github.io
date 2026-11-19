@@ -222,11 +222,8 @@ export default function App() {
             <span className="hero-label">
               ✧ UN REGALITO HECHO PARA TI ✧
             </span>
-
-            <div className="hero-heart">♡</div>
-
             <h1>
-              <span className="hero-title-first">Para mi{"\u00A0\u00A0"} </span>
+              <span className="hero-title-first">Para mi{"\u00A0\u00A0"}  </span>
               <span className="hero-title-second">
                 <em>Marilinda</em>
                 <span className="gold-dot">♡</span> 
@@ -250,7 +247,7 @@ export default function App() {
           </div>
 
           <div className="hero-bottom">
-            hecho con cariño, para ti ♡
+            Hecho con cariño, para ti
           </div>
 
         </section>
