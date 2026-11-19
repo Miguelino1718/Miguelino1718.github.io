@@ -999,6 +999,7 @@ p {
   font-weight: 800;
   letter-spacing: .2em;
   text-shadow: 0 2px 9px rgba(0, 0, 0, .75);
+  margin-bottom: 35px;
 }
 
 .hero .hero-heart {
