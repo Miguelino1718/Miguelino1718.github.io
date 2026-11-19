@@ -1337,3 +1337,13 @@ p {
     font-size: 30px;
   }
 }
+
+/* ANCLA DEL CONTADOR */
+#nuestro-tiempo {
+  scroll-margin-top: 95px;
+}
+
+/* Desplazamiento suave */
+html {
+  scroll-behavior: smooth;
+}
