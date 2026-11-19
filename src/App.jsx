@@ -121,6 +121,7 @@ export default function App() {
   const nav = [
     ['inicio', 'Inicio'],
     ['nosotros', 'Nosotros'],
+    ['nuestro-tiempo', 'Nuestro tiempo ♡'],
     ['historia', 'Historia'],
     ['recuerdos', 'Recuerdos'],
     ['cartas', 'Cartas'],
@@ -305,7 +306,9 @@ export default function App() {
 
             </div>
             
-            <RelationshipCounter />
+            <div id="nuestro-tiempo" className="relationship-counter-anchor">
+              <RelationshipCounter />
+            </div>
 
             <div className="dedication">
               <p>{content.dedication}</p>
