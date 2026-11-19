@@ -1313,3 +1313,157 @@ position: relative;
   }
 }
 
+
+/* ==========================================
+   PORTADA - ALINEACIÓN Y SIMETRÍA
+========================================== */
+
+/* Contenedor principal */
+.hero .hero-inner {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Etiqueta superior */
+.hero .hero-label {
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+/* Corazón superior */
+.hero .hero-heart {
+  margin: 10px 0 8px;
+  font-size: 58px;
+  line-height: 1;
+}
+
+/* Título completo */
+.hero h1 {
+  width: 100%;
+  margin: 12px 0 20px;
+  text-align: center;
+
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(75px, 9vw, 125px);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: 0;
+
+  color: #FFF4DF;
+}
+
+/* Marilinda */
+.hero h1 em {
+  color: #FFD4E0;
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(90px, 10vw, 145px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+/* Corazón junto a Marilinda */
+.hero .gold-dot {
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-size: 65px;
+  font-weight: 400;
+  color: #FFE0A6;
+
+  margin-left: 10px;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+/* Descripción */
+.hero .hero-inner > p {
+  max-width: 580px;
+  margin: 12px auto 22px;
+  text-align: center;
+
+  font-size: 18px;
+  line-height: 1.7;
+  color: #FFF4DF;
+}
+
+/* Contador */
+.hero .count-tag {
+  min-height: 46px;
+  padding: 12px 22px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* Botón principal */
+.hero .primary-link {
+  min-height: 46px;
+  padding: 12px 25px;
+  margin-top: 16px;
+  justify-content: center;
+}
+
+/* Firma */
+.hero .hero-sign {
+  margin-top: 35px;
+  text-align: center;
+  font-family: 'Great Vibes', cursive;
+  font-size: 44px;
+  color: #FFE0A6;
+}
+
+/* ==========================================
+   RESPONSIVE - CELULARES
+========================================== */
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 65px 15px 75px;
+  }
+
+  .hero h1 {
+    font-size: clamp(58px, 11vw, 85px);
+    margin-bottom: 14px;
+  }
+
+  .hero h1 em {
+    font-size: clamp(68px, 12vw, 100px);
+  }
+
+  .hero .gold-dot {
+    font-size: 40px;
+    margin-left: 5px;
+  }
+
+  .hero .hero-heart {
+    font-size: 48px;
+  }
+
+  .hero .hero-inner > p {
+    font-size: 16px;
+    max-width: 360px;
+    margin: 10px auto 20px;
+  }
+
+  .hero .count-tag {
+    max-width: 100%;
+    padding: 10px 15px;
+  }
+
+  .hero .primary-link {
+    margin-top: 14px;
+  }
+
+  .hero .hero-sign {
+    font-size: 36px;
+    margin-top: 28px;
+  }
+}
+
