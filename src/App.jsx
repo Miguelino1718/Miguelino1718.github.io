@@ -227,7 +227,7 @@ export default function App() {
 
             <div className="hero-photo">
               <img
-                src={`${import.meta.env.BASE_URL}Finalv.png`}
+                src={`${import.meta.env.BASE_URL}Banner.png`}
                 alt="Miguel y Mari, unidos por la música"
               />
             </div>
