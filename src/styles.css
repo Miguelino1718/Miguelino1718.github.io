@@ -1232,10 +1232,21 @@ position: relative;
 /* Corazón amarillo del título */
 .hero .gold-dot {
   display: inline-block;
-  font-size: .32em;
-  vertical-align: middle;
+  font-family: 'Arial', sans-serif;
+  font-size: 75px;
+  font-weight: 400;
   color: #FFE0A6;
-  margin-left: 10px;
+  vertical-align: middle;
+  margin-left: 15px;
+  line-height: 1;
+  text-shadow: 0 2px 12px rgba(255, 224, 166, 0.35);
+}
+/* Celulares */
+@media (max-width: 600px) {
+  .hero .gold-dot {
+    font-size: 42px;
+    margin-left: 6px;
+  }
 }
 
 /* Descripción */
