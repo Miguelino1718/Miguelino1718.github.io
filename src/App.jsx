@@ -230,7 +230,7 @@ export default function App() {
               <span className="hero-title-second">
                 <em>Marilinda</em>
                 <span className="gold-dot">♡</span> 
-              {"\u00A0\u00A0"} </span>
+              {"\u00A0\u00A0"} {"\u00A0\u00A0"} </span>
             </h1>
 
 
