@@ -111,48 +111,6 @@ p {
    PORTADA PRINCIPAL
 ========================================== */
 
-.hero {
-position: relative;
-  width: 100%;
-  min-height: calc(100svh - 72px);
-
-  display: grid;
-  place-items: center;
-  text-align: center;
-  overflow: hidden;
-
-  padding: 70px 20px 60px;
-
-  background: #241f2b;
-}
-
-.hero::before,
-.hero::after {
-  content: '';
-  position: absolute;
-  border: 1px solid #d6bfa2;
-  border-radius: 50%;
-  width: 460px;
-  height: 460px;
-  opacity: 0.2;
-  pointer-events: none;
-}
-
-.hero::before {
-  top: -290px;
-  left: -170px;
-}
-
-.hero::after {
-  bottom: -300px;
-  right: -140px;
-}
-
-.hero-inner {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-}
 
 .hero-label,
 .eyebrow,
@@ -163,129 +121,16 @@ position: relative;
   color: #bd8e68;
 }
 
-.hero-heart {
-  font-size: 70px;
-  color: #d8a3a7;
-  line-height: 1.1;
-  margin-top: 15px;
-}
-
-.hero h1 {
-  font-size: clamp(55px, 8vw, 104px);
-  font-weight: 500;
-  line-height: 1.06;
-  letter-spacing: -0.05em;
-  margin: 12px 0 24px;
-  color: #594534;
-}
-
-.hero h1 em,
-.closing h2 em {
-  color: #c78c88;
-  font-weight: 400;
-}
-
-.gold-dot {
-  color: #e4bb69;
-}
 
 /* ==========================================
    NUEVA FOTOGRAFÍA DE PORTADA
 ========================================== */
 
-.hero-photo {
-  position: absolute;
-  inset: 0;
-
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-
-  overflow: hidden;
-  z-index: 0;
-
-  animation: none;
-}
-
-.hero-photo img {
-  display: block;
-  width: 100%;
-  height: 100%;
-
-  object-fit: cover;
-  object-position: center;
-
-  border-radius: 0;
-  transition: none;
-}
-
-.hero-photo:hover img {
-  transform: none;
-}
-
-.hero-photo::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.15),
-    rgba(0, 0, 0, 0.35),
-    rgba(0, 0, 0, 0.55)
-  );
-
-  pointer-events: none;
-}
-.hero h1 em {
-  color: #fff8ed;
-}
-
-.hero-label,
-.hero-inner > p,
-.hero-sign,
-.hero-bottom {
-  color: #fff4e5;
-}
-
-.hero-heart,
-.hero-sign span {
-  color: #f5c5cd;
-}
-
-.hero h1,
-.hero-inner > p,
-.hero-sign {
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.55);
-}
-
-@keyframes photoAppear {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 /* ==========================================
    TEXTO Y BOTONES DE PORTADA
 ========================================== */
 
-.hero-inner > p {
-  font-size: 16px;
-  max-width: 470px;
-  margin: 0 auto 22px;
-  color: #877361;
-}
 
 .count-tag {
   display: inline-flex;
@@ -323,42 +168,6 @@ position: relative;
   transform: translateY(-2px);
 }
 
-.hero-sign {
-  margin-top: 48px;
-  font-family: 'Playfair Display', serif;
-  font-size: 21px;
-  color: #8c6d58;
-  font-style: italic;
-}
-
-.hero-sign span {
-  color: #cf8b8c;
-  margin: 0 12px;
-}
-
-.hero-bottom {
-  position: absolute;
-  bottom: 22px;
-  font-size: 11px;
-  color: #a98f7a;
-}
-
-.hero-spark {
-  position: absolute;
-  font-size: 45px;
-  color: #d9b980;
-  opacity: 0.6;
-}
-
-.s1 {
-  top: 18%;
-  left: 15%;
-}
-
-.s2 {
-  bottom: 18%;
-  right: 17%;
-}
 
 /* ==========================================
    SECCIONES GENERALES
@@ -407,11 +216,6 @@ position: relative;
   color: #97816d;
   font-size: 15px;
 }
-
-/* ==========================================
-   NOSOTROS
-========================================== */
-
 
 /* ==========================================
    NOSOTROS
@@ -1048,28 +852,17 @@ position: relative;
     padding: 75px 18px;
   }
 
-  .hero {
-    padding: 65px 18px 55px;
-  }
+  
 
-  .hero h1 {
-    font-size: clamp(47px, 11vw, 67px);
-  }
+  
 
   .hero-label {
     font-size: 9px;
   }
 
-  .hero-photo {
-    width: min(290px, 85vw);
-    margin: 18px auto;
-    padding: 6px;
-    border-radius: 17px;
-  }
+  
 
-  .hero-photo img {
-    border-radius: 12px;
-  }
+  
 
   .people-grid,
   .gallery-grid,
@@ -1105,9 +898,7 @@ position: relative;
     font-size: 18px;
   }
 
-  .hero-spark {
-    display: none;
-  }
+  
 
   .time-item {
     gap: 12px;
@@ -1131,24 +922,30 @@ position: relative;
 ========================================== */
 
 @media (prefers-reduced-motion: reduce) {
-  .hero-photo {
-    animation: none;
-  }
+  
 
-  .hero-photo img {
-    transition: none;
-  }
+  
 }
 
 /* ==========================================
-   PORTADA: BANNER DE FONDO Y TEXTO VISIBLE
-   Mantener al final para sobrescribir estilos antiguos
+   PORTADA ROMÁNTICA — ESTILOS DEFINITIVOS 💛
+   Una sola configuración para escritorio y móvil
 ========================================== */
+
 .hero {
+  position: relative;
   isolation: isolate;
+  width: 100%;
   min-height: calc(100svh - 72px);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  padding: 65px 20px 70px;
+  text-align: center;
   background: #241f2b;
 }
+
+/* Imagen de fondo (en App.jsx está dentro de .hero-inner) */
 .hero .hero-photo {
   position: absolute;
   inset: 0;
@@ -1157,12 +954,13 @@ position: relative;
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow: hidden;
   border: 0;
   border-radius: 0;
   box-shadow: none;
-  overflow: hidden;
   pointer-events: none;
 }
+
 .hero .hero-photo img {
   display: block;
   width: 100%;
@@ -1171,103 +969,126 @@ position: relative;
   object-position: center;
   border-radius: 0;
 }
+
 .hero .hero-photo::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(12, 10, 20, .40), rgba(12, 10, 20, .48) 55%, rgba(12, 10, 20, .65));
-  pointer-events: none;
+  background: linear-gradient(180deg,
+    rgba(12, 10, 20, .38) 0%,
+    rgba(12, 10, 20, .44) 55%,
+    rgba(12, 10, 20, .64) 100%);
 }
+
 .hero .hero-inner {
   position: relative;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   max-width: 900px;
-  margin-inline: auto;
-}
-.hero .hero-bottom { z-index: 2; }
-.hero::before, .hero::after { display: none; }
-
-.hero .hero-label, .hero .hero-inner > p,
-.hero .hero-sign, .hero .hero-bottom { color: #fff8ed; }
-.hero .hero-heart, .hero .hero-sign span { color: #f5c5cd; }
-.hero h1, .hero .hero-inner > p, .hero .hero-sign,
-.hero .hero-label { text-shadow: 0 2px 14px rgba(0,0,0,.75); }
-.hero .hero-spark { z-index: 1; pointer-events: none; }
-@media (max-width: 600px) {
-  .hero { padding: 75px 18px 80px; }
-  .hero .hero-photo { width: 100%; height: 100%; margin: 0; padding: 0; border-radius: 0; }
-  .hero .hero-photo img { border-radius: 0; object-position: center; }
-  .hero .hero-sign { margin-top: 26px; }
+  margin: 0 auto;
+  text-align: center;
 }
 
+.hero .hero-label {
+  color: #FFE0A6;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .2em;
+  text-shadow: 0 2px 9px rgba(0, 0, 0, .75);
+}
 
+.hero .hero-heart {
+  margin: 13px 0 7px;
+  color: #F6B9CB;
+  font-size: 58px;
+  line-height: 1;
+}
 
-/* ==========================================
-   PORTADA ROMÁNTICA — GREAT VIBES 💛
-========================================== */
-
-/* Para mi */
+/* Dos líneas con el mismo eje central */
 .hero h1 {
+  width: 100%;
+  margin: 12px 0 16px;
+  color: #FFF4DF;
   font-family: 'Great Vibes', cursive;
-  font-size: clamp(80px, 9vw, 125px);
+  font-size: clamp(75px, 9vw, 125px);
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0;
-  line-height: 1.2;
-  color: #FFF4DF;
-  margin: 12px 0 22px;
+  line-height: 1.18;
+  text-align: center;
   text-shadow: 0 4px 18px rgba(0, 0, 0, .65);
 }
 
-/* Marilinda */
+.hero-title-first,
+.hero-title-second {
+  display: block;
+}
+
+.hero-title-second {
+  position: relative;
+  width: fit-content;
+  max-width: 100%;
+  margin-inline: auto;
+}
+
 .hero h1 em {
-  font-family: 'Great Vibes', cursive;
-  font-size: clamp(95px, 11vw, 150px);
-  font-weight: 400;
-  font-style: normal;
   color: #FFD4E0;
-  text-shadow: 0 4px 18px rgba(0, 0, 0, .65);
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(90px, 10vw, 145px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.18;
 }
 
-/* Corazón amarillo del título */
-.hero .gold-dot {
+/* El corazón NO participa en el ancho de Marilinda */
+.hero .hero-title-second .gold-dot {
+  position: absolute;
+  top: 50%;
+  left: 100%;
   display: inline-block;
-  font-family: 'Arial', sans-serif;
-  font-size: 75px;
-  font-weight: 400;
+  margin-left: 12px;
+  transform: translateY(-50%);
   color: #FFE0A6;
-  vertical-align: middle;
-  margin-left: 15px;
+  font-family: Arial, sans-serif;
+  font-size: 65px;
+  font-weight: 400;
   line-height: 1;
-  text-shadow: 0 2px 12px rgba(255, 224, 166, 0.35);
-}
-/* Celulares */
-@media (max-width: 600px) {
-  .hero .gold-dot {
-    font-size: 42px;
-    margin-left: 6px;
-  }
+  text-shadow: 0 2px 12px rgba(255, 224, 166, .3);
 }
 
-/* Descripción */
 .hero .hero-inner > p {
+  max-width: 580px;
+  margin: 12px auto 22px;
   color: #FFF4DF;
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 400;
-  max-width: 570px;
-  line-height: 1.65;
+  line-height: 1.7;
+  text-align: center;
   text-shadow: 0 2px 12px rgba(0, 0, 0, .85);
 }
 
-/* Texto superior */
-.hero .hero-label {
-  color: #FFE0A6;
+.hero .count-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 46px;
+  margin: 0 auto;
+  padding: 12px 22px;
+  border: 1px solid #FFE0A6;
+  border-radius: 99px;
+  background: rgba(255, 248, 237, .95);
+  color: #785B4A;
   font-size: 12px;
-  letter-spacing: .22em;
 }
 
-/* Botón principal */
 .hero .primary-link {
+  min-height: 46px;
+  margin-top: 16px;
+  padding: 12px 25px;
   background: #D99AAE;
   color: #30243B;
   box-shadow: 0 6px 22px rgba(0, 0, 0, .22);
@@ -1278,234 +1099,52 @@ position: relative;
   transform: translateY(-3px);
 }
 
-/* Contador */
-.hero .count-tag {
-  background: rgba(255, 248, 237, .95);
-  border: 1px solid #FFE0A6;
-  color: #785B4A;
-}
-
-/* Firma */
-.hero .hero-sign {
-  font-family: 'Great Vibes', cursive;
-  font-size: 46px;
-  font-style: normal;
-  color: #FFE0A6;
-  margin-top: 35px;
-}
-
-/* Adaptación a celulares */
-@media (max-width: 600px) {
-  .hero h1 {
-    font-size: clamp(58px, 12vw, 85px);
-  }
-
-  .hero h1 em {
-    font-size: clamp(65px, 14vw, 100px);
-  }
-
-  .hero .hero-inner > p {
-    font-size: 16px;
-  }
-
-  .hero .hero-sign {
-    font-size: 35px;
-  }
-}
-
-
-/* ==========================================
-   PORTADA - ALINEACIÓN Y SIMETRÍA
-========================================== */
-
-/* Contenedor principal */
-.hero .hero-inner {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-/* Etiqueta superior */
-.hero .hero-label {
-  margin-bottom: 8px;
-  text-align: center;
-}
-
-/* Corazón superior */
-.hero .hero-heart {
-  margin: 10px 0 8px;
-  font-size: 58px;
-  line-height: 1;
-}
-
-/* Título completo */
-.hero h1 {
-  width: 100%;
-  margin: 12px 0 20px;
-  text-align: center;
-
-  font-family: 'Great Vibes', cursive;
-  font-size: clamp(75px, 9vw, 125px);
-  font-weight: 400;
-  line-height: 1.15;
-  letter-spacing: 0;
-
-  color: #FFF4DF;
-}
-
-/* Marilinda */
-.hero h1 em {
-  color: #FFD4E0;
-  font-family: 'Great Vibes', cursive;
-  font-size: clamp(90px, 10vw, 145px);
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.15;
-}
-
-/* Corazón junto a Marilinda */
-.hero .gold-dot {
-  display: inline-block;
-  font-family: Arial, sans-serif;
-  font-size: 65px;
-  font-weight: 400;
-  color: #FFE0A6;
-
-  margin-left: 10px;
-  vertical-align: middle;
-  line-height: 1;
-}
-
-/* Descripción */
-.hero .hero-inner > p {
-  max-width: 580px;
-  margin: 12px auto 22px;
-  text-align: center;
-
-  font-size: 18px;
-  line-height: 1.7;
-  color: #FFF4DF;
-}
-
-/* Contador */
-.hero .count-tag {
-  min-height: 46px;
-  padding: 12px 22px;
-  justify-content: center;
-  margin: 0 auto;
-}
-
-/* Botón principal */
-.hero .primary-link {
-  min-height: 46px;
-  padding: 12px 25px;
-  margin-top: 16px;
-  justify-content: center;
-}
-
-/* Firma */
 .hero .hero-sign {
   margin-top: 35px;
-  text-align: center;
+  color: #FFE0A6;
   font-family: 'Great Vibes', cursive;
   font-size: 44px;
-  color: #FFE0A6;
+  font-style: normal;
+  text-align: center;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, .75);
 }
 
-/* ==========================================
-   RESPONSIVE - CELULARES
-========================================== */
-
-@media (max-width: 600px) {
-  .hero {
-    padding: 65px 15px 75px;
-  }
-
-  .hero h1 {
-    font-size: clamp(58px, 11vw, 85px);
-    margin-bottom: 14px;
-  }
-
-  .hero h1 em {
-    font-size: clamp(68px, 12vw, 100px);
-  }
-
-  .hero .gold-dot {
-    font-size: 40px;
-    margin-left: 5px;
-  }
-
-  .hero .hero-heart {
-    font-size: 48px;
-  }
-
-  .hero .hero-inner > p {
-    font-size: 16px;
-    max-width: 360px;
-    margin: 10px auto 20px;
-  }
-
-  .hero .count-tag {
-    max-width: 100%;
-    padding: 10px 15px;
-  }
-
-  .hero .primary-link {
-    margin-top: 14px;
-  }
-
-  .hero .hero-sign {
-    font-size: 36px;
-    margin-top: 28px;
-  }
+.hero .hero-sign span {
+  margin: 0 12px;
+  color: #F6B9CB;
 }
 
-/* ==========================================
-   CENTRADO EXACTO DEL TÍTULO 💛
-========================================== */
-
-.hero-title-first,
-.hero-title-second {
-  display: block;
-}
-
-/* Centrar Marilinda sin contar el corazón */
-.hero-title-second {
-  position: relative;
-  width: fit-content;
-  max-width: 100%;
-  margin-inline: auto;
-}
-
-/* Corazón decorativo a la derecha */
-.hero-title-second .gold-dot {
+.hero .hero-bottom {
   position: absolute;
-  left: 100%;
-  top: 50%;
-  transform: translateY(-50%);
-
-  margin-left: 12px;
-  font-size: 65px;
-  color: #FFE0A6;
-  line-height: 1;
+  z-index: 2;
+  bottom: 18px;
+  color: #FFF4DF;
+  font-size: 11px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, .8);
 }
 
-/* Celulares */
+.hero .hero-spark {
+  position: absolute;
+  z-index: 1;
+  color: #D9B980;
+  font-size: 45px;
+  opacity: .6;
+  pointer-events: none;
+}
+
+.hero .s1 { top: 18%; left: 15%; }
+.hero .s2 { bottom: 18%; right: 17%; }
+
 @media (max-width: 600px) {
-  .hero-title-second .gold-dot {
-    font-size: 38px;
-    margin-left: 5px;
-  }
-
-  .hero h1 em {
-    font-size: clamp(58px, 12vw, 85px);
-  }
+  .hero { padding: 65px 15px 75px; }
+  .hero h1 { font-size: clamp(54px, 11vw, 85px); margin-bottom: 14px; }
+  .hero h1 em { font-size: clamp(55px, 11.5vw, 95px); }
+  .hero .hero-title-second .gold-dot { font-size: clamp(28px, 7vw, 40px); margin-left: 4px; }
+  .hero .hero-heart { font-size: 48px; }
+  .hero .hero-label { font-size: 9px; }
+  .hero .hero-inner > p { max-width: 360px; margin: 10px auto 20px; font-size: 16px; }
+  .hero .count-tag { max-width: 100%; padding: 10px 15px; }
+  .hero .primary-link { margin-top: 14px; }
+  .hero .hero-sign { margin-top: 28px; font-size: 36px; }
+  .hero .hero-spark { display: none; }
 }
-
