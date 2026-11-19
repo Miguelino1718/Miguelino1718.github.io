@@ -289,7 +289,7 @@ export default function App() {
                   <div className="person-info">
 
                     <span className="mini-label">
-                      {i ? 'LA PROTAGONISTA' : 'EL CÓMPLICE'}
+                      {i ? 'LA PRINCESA' : 'EL PRÍNCIPE'}
                     </span>
 
                     <h3>{p.name}</h3>
