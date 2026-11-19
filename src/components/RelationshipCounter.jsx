@@ -4,7 +4,7 @@ import "./RelationshipCounter.css";
 
 // Fecha oficial de nuestra relación
 // Año, mes (0-11), día, hora, minuto
-const START_DATE = new Date(2026, 10, 10, 0, 0);
+const START_DATE = new Date("2026-11-10T07:00:00-05:00");
 
 function calculateTimeTogether() {
   const now = new Date();
