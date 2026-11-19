@@ -1253,3 +1253,22 @@ position: relative;
 .hero .gold-dot {
   color: #FFE0A6;
 }
+/* Título romántico con letra cursiva corrida */
+.hero h1,
+.hero h1 em {
+  font-family: 'Allura', cursive;
+  font-size: clamp(80px, 10vw, 140px);
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  line-height: 1.15;
+  color: #FFD4E0;
+  text-shadow: 0 3px 15px rgba(0, 0, 0, 0.7);
+}
+
+/* Firma Miguel ♥ Mari */
+.hero .hero-sign {
+  font-family: 'Allura', cursive;
+  font-size: 42px;
+  color: #FFE0A6;
+}
