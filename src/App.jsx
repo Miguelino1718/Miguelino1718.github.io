@@ -20,6 +20,7 @@ import {
 
 import content from './data/content.json';
 import ValorantSection from './components/ValorantSection.jsx';
+import RelationshipCounter from "./components/RelationshipCounter.jsx";
 
 /* ==========================================
    FUNCIONES AUXILIARES
@@ -227,9 +228,9 @@ export default function App() {
             <h1>
               <span className="hero-title-first">Para mi{"\u00A0\u00A0"} </span>
               <span className="hero-title-second">
-                <em>Marilinda</em> {"\u00A0\u00A0"}
+                <em>Marilinda</em>
                 <span className="gold-dot">♡</span> 
-              </span>
+              {"\u00A0\u00A0"} </span>
             </h1>
 
 
@@ -306,6 +307,8 @@ export default function App() {
               ))}
 
             </div>
+            
+            <RelationshipCounter />
 
             <div className="dedication">
               <Heart size={22} fill="currentColor" />
