@@ -142,8 +142,7 @@ export default function RelationshipCounter() {
       </div>
 
       <span className="relationship-message">
-        Y todavía nos quedan muchísimas historias
-        por vivir juntos. 💛
+        No sé qué nos espera mañana, pero me ilusiona descubrirlo contigo.
       </span>
     </div>
   );
