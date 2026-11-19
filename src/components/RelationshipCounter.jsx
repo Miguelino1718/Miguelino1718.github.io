@@ -116,7 +116,7 @@ export default function RelationshipCounter() {
       <h3>Nuestro tiempo juntitos ♡</h3>
 
       <p>
-        Cada segundo contigo es un recuerdo
+        Cada momento contigo es un recuerdo
         que quiero guardar.
       </p>
 
