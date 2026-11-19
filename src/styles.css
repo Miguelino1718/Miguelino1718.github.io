@@ -1186,7 +1186,7 @@ position: relative;
 }
 .hero .hero-bottom { z-index: 2; }
 .hero::before, .hero::after { display: none; }
-.hero h1, .hero h1 em { color: #fff8ed; }
+
 .hero .hero-label, .hero .hero-inner > p,
 .hero .hero-sign, .hero .hero-bottom { color: #fff8ed; }
 .hero .hero-heart, .hero .hero-sign span { color: #f5c5cd; }
@@ -1201,63 +1201,23 @@ position: relative;
 }
 
 /* ==========================================
-   COLORES DE LA PORTADA - MARILINDA 💛
+   TIPOGRAFÍA ROMÁNTICA DEL BANNER 💛
+   Para mi: marfil / Marilinda: rosa pastel
 ========================================== */
-
-/* Primera línea: Para mi */
 .hero h1 {
-  color: #FFF4DF;
-  text-shadow: 0 3px 12px rgba(10, 8, 30, 0.65);
-}
-
-/* Segunda línea: Marilinda */
-.hero h1 em {
-  color: #FFD4E0;
-  text-shadow: 0 3px 15px rgba(10, 8, 30, 0.65);
-}
-
-/* Texto superior */
-.hero .hero-label {
-  color: #FFF4DF;
-  text-shadow: 0 2px 8px rgba(10, 8, 30, 0.8);
-}
-
-/* Descripción debajo del título */
-.hero .hero-inner > p {
-  color: #F8EDEB;
-  font-size: 17px;
-  font-weight: 500;
-  line-height: 1.7;
-  text-shadow: 0 2px 10px rgba(10, 8, 30, 0.9);
-}
-
-/* Firma Miguel ♥ Mari */
-.hero .hero-sign {
-  color: #FFE0A6;
-  text-shadow: 0 2px 10px rgba(10, 8, 30, 0.9);
-}
-
-/* Corazones */
-.hero .hero-heart,
-.hero .hero-sign span {
-  color: #F6B9CB;
-}
-
-/* Texto inferior */
-.hero .hero-bottom {
-  color: #FFF4DF;
-  text-shadow: 0 2px 8px rgba(10, 8, 30, 0.8);
-}
-
-/* Punto decorativo */
-.hero .gold-dot {
-  color: #FFE0A6;
-}
-/* Título romántico con letra cursiva corrida */
-.hero h1,
-.hero h1 em {
   font-family: 'Allura', cursive;
   font-size: clamp(80px, 10vw, 140px);
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  line-height: 1.15;
+  color: #FFF4DF;
+  text-shadow: 0 3px 15px rgba(0, 0, 0, 0.7);
+}
+
+.hero h1 em {
+  font-family: 'Allura', cursive;
+  font-size: clamp(90px, 11vw, 150px);
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0;
@@ -1266,9 +1226,22 @@ position: relative;
   text-shadow: 0 3px 15px rgba(0, 0, 0, 0.7);
 }
 
-/* Firma Miguel ♥ Mari */
+.hero .hero-label { color: #FFF4DF; }
+.hero .hero-inner > p { color: #F8EDEB; }
+.hero .hero-bottom { color: #FFF4DF; }
+.hero .hero-heart, .hero .hero-sign span { color: #F6B9CB; }
+.hero .gold-dot { color: #FFE0A6; }
+
 .hero .hero-sign {
   font-family: 'Allura', cursive;
   font-size: 42px;
+  font-style: normal;
   color: #FFE0A6;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 600px) {
+  .hero h1 { font-size: clamp(60px, 12vw, 85px); }
+  .hero h1 em { font-size: clamp(70px, 14vw, 100px); }
+  .hero .hero-sign { font-size: 32px; }
 }
