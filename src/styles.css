@@ -1139,3 +1139,63 @@ position: relative;
     transition: none;
   }
 }
+
+/* ==========================================
+   PORTADA: BANNER DE FONDO Y TEXTO VISIBLE
+   Mantener al final para sobrescribir estilos antiguos
+========================================== */
+.hero {
+  isolation: isolate;
+  min-height: calc(100svh - 72px);
+  background: #241f2b;
+}
+.hero .hero-photo {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: hidden;
+  pointer-events: none;
+}
+.hero .hero-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0;
+}
+.hero .hero-photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(12, 10, 20, .40), rgba(12, 10, 20, .48) 55%, rgba(12, 10, 20, .65));
+  pointer-events: none;
+}
+.hero .hero-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin-inline: auto;
+}
+.hero .hero-bottom { z-index: 2; }
+.hero::before, .hero::after { display: none; }
+.hero h1, .hero h1 em { color: #fff8ed; }
+.hero .hero-label, .hero .hero-inner > p,
+.hero .hero-sign, .hero .hero-bottom { color: #fff8ed; }
+.hero .hero-heart, .hero .hero-sign span { color: #f5c5cd; }
+.hero h1, .hero .hero-inner > p, .hero .hero-sign,
+.hero .hero-label { text-shadow: 0 2px 14px rgba(0,0,0,.75); }
+.hero .hero-spark { z-index: 1; pointer-events: none; }
+@media (max-width: 600px) {
+  .hero { padding: 75px 18px 80px; }
+  .hero .hero-photo { width: 100%; height: 100%; margin: 0; padding: 0; border-radius: 0; }
+  .hero .hero-photo img { border-radius: 0; object-position: center; }
+  .hero .hero-sign { margin-top: 26px; }
+}
