@@ -110,7 +110,7 @@ export default function RelationshipCounter() {
   return (
     <div className="relationship-counter">
       <span className="relationship-label">
-        ✧ JUNTITOS DESDE EL 10 DE NOVIEMBRE DE 2026, 7:00 A. M. ✧
+        ✧ DESDE EL 10 DE NOVIEMBRE DE 2026 ✧
       </span>
 
       <h3>Nuestro tiempo juntitos ♡</h3>
