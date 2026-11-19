@@ -1,6 +1,7 @@
 
 /* ==========================================
    CONTADOR DE RELACIÓN — MIGUEL ♡ MARI
+   AÑOS · MESES · DÍAS · HORAS · MINUTOS
 ========================================== */
 
 .relationship-counter {
@@ -26,6 +27,7 @@
   letter-spacing: 0.15em;
   color: #B98778;
   font-weight: 700;
+  line-height: 1.6;
 }
 
 /* ==========================================
@@ -53,21 +55,21 @@
 }
 
 /* ==========================================
-   CONTENEDOR DE TIEMPO
+   CONTENEDOR DEL TIEMPO — 5 COLUMNAS
 ========================================== */
 
 .relationship-time {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
 
   width: 100%;
-  max-width: 580px;
+  max-width: 620px;
   margin: 0 auto 28px;
 }
 
 /* ==========================================
-   TARJETAS: AÑOS, MESES, DÍAS Y HORAS
+   TARJETAS INDIVIDUALES
 ========================================== */
 
 .relationship-unit {
@@ -78,7 +80,7 @@
 
   min-width: 0;
   gap: 8px;
-  padding: 22px 10px;
+  padding: 20px 6px;
 
   background: #FFFFFF;
   border: 1px solid #F0D9DC;
@@ -99,14 +101,14 @@
 }
 
 /* ==========================================
-   NÚMEROS DEL CONTADOR
+   NÚMEROS
 ========================================== */
 
 .relationship-unit strong {
   display: inline-block;
 
   font-family: "Playfair Display", serif;
-  font-size: clamp(30px, 5vw, 48px);
+  font-size: clamp(26px, 4vw, 43px);
   font-weight: 500;
   line-height: 1.2;
 
@@ -114,7 +116,7 @@
   font-variant-numeric: tabular-nums;
 }
 
-/* Animación al cambiar los números */
+/* Animación cuando cambia un número */
 
 .relationship-number {
   animation: numberChange 0.45s ease-out;
@@ -133,13 +135,14 @@
 }
 
 /* ==========================================
-   ETIQUETAS DE TIEMPO
+   ETIQUETAS: AÑOS, MESES, DÍAS, ETC.
 ========================================== */
 
 .relationship-unit span {
   font-size: 12px;
   font-weight: 500;
   color: #987B76;
+  white-space: nowrap;
 }
 
 /* ==========================================
@@ -174,7 +177,7 @@
 }
 
 /* ==========================================
-   TABLETS
+   TABLETS — HASTA 850 PX
 ========================================== */
 
 @media (max-width: 850px) {
@@ -184,20 +187,21 @@
   }
 
   .relationship-time {
-    gap: 10px;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 8px;
   }
 
   .relationship-unit {
-    padding: 20px 8px;
+    padding: 20px 6px;
   }
 
   .relationship-unit strong {
-    font-size: clamp(28px, 5vw, 42px);
+    font-size: clamp(25px, 4vw, 36px);
   }
 }
 
 /* ==========================================
-   CELULARES
+   CELULARES — HASTA 600 PX
 ========================================== */
 
 @media (max-width: 600px) {
@@ -223,25 +227,25 @@
   }
 
   .relationship-time {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 7px;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 5px;
     max-width: 100%;
     margin-bottom: 25px;
   }
 
   .relationship-unit {
     min-width: 0;
-    padding: 16px 4px;
+    padding: 15px 2px;
     gap: 6px;
-    border-radius: 12px;
+    border-radius: 10px;
   }
 
   .relationship-unit strong {
-    font-size: clamp(22px, 6vw, 36px);
+    font-size: clamp(19px, 5vw, 28px);
   }
 
   .relationship-unit span {
-    font-size: 10px;
+    font-size: 9px;
   }
 
   .relationship-message {
@@ -251,7 +255,7 @@
 }
 
 /* ==========================================
-   CELULARES MUY PEQUEÑOS
+   CELULARES PEQUEÑOS — HASTA 360 PX
 ========================================== */
 
 @media (max-width: 360px) {
@@ -260,19 +264,23 @@
   }
 
   .relationship-time {
-    gap: 5px;
+    gap: 4px;
   }
 
   .relationship-unit {
-    padding: 14px 3px;
+    padding: 14px 2px;
   }
 
   .relationship-unit strong {
-    font-size: 21px;
+    font-size: 18px;
   }
 
   .relationship-unit span {
-    font-size: 9px;
+    font-size: 8px;
+  }
+
+  .relationship-label {
+    font-size: 8px;
   }
 }
 
@@ -288,5 +296,9 @@
 
   .relationship-unit {
     transition: none;
+  }
+
+  .relationship-unit:hover {
+    transform: none;
   }
 }
