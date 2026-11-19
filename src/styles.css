@@ -1050,7 +1050,7 @@ p {
   top: 50%;
   left: 100%;
   display: inline-block;
-  margin-left: 15px;
+  margin-left: 5px;
   transform: translateY(-50%);
   color: #FFE0A6;
   font-family: Arial, sans-serif;
