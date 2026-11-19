@@ -1033,6 +1033,9 @@ p {
   width: fit-content;
   max-width: 100%;
   margin-inline: auto;
+
+  /* Mueve Marilinda y el corazón juntos */
+  transform: translateX(-35px);
 }
 
 .hero h1 em {
@@ -1049,15 +1052,21 @@ p {
   position: absolute;
   top: 50%;
   left: 100%;
+
   display: inline-block;
-  margin-left: 5px;
+
+  /* Separación entre Marilinda y ♡ */
+  margin-left: 30px;
+
   transform: translateY(-50%);
+
   color: #FFE0A6;
   font-family: Arial, sans-serif;
-  font-size: 150px;
+  font-size: clamp(65px, 10vw, 150px);
   font-weight: 400;
   line-height: 1;
-  text-shadow: 0 2px 12px rgba(255, 224, 166, .3);
+
+  text-shadow: 0 2px 12px rgba(255, 224, 166, 0.3);
 }
 
 .hero .hero-inner > p {
@@ -1139,19 +1148,191 @@ p {
 .hero .s1 { top: 18%; left: 15%; }
 .hero .s2 { bottom: 18%; right: 17%; }
 
+
+/* ==========================================
+   PANTALLAS GRANDES — 1440 PX O MÁS
+========================================== */
+
+@media (min-width: 1440px) {
+  .hero-title-second {
+    transform: translateX(-45px);
+  }
+
+  .hero .hero-title-second .gold-dot {
+    font-size: 150px;
+    margin-left: 35px;
+  }
+}
+
+/* ==========================================
+   LAPTOPS Y TABLETS — HASTA 1024 PX
+========================================== */
+
+@media (max-width: 1024px) {
+  .hero-title-second {
+    transform: translateX(-30px);
+  }
+
+  .hero .hero-title-second .gold-dot {
+    font-size: clamp(75px, 10vw, 110px);
+    margin-left: 22px;
+  }
+}
+
+/* ==========================================
+   TABLETS — HASTA 768 PX
+========================================== */
+
+@media (max-width: 768px) {
+  .hero-title-second {
+    transform: translateX(-22px);
+  }
+
+  .hero .hero-title-second .gold-dot {
+    font-size: clamp(60px, 9vw, 85px);
+    margin-left: 15px;
+  }
+}
+
+/* ==========================================
+   CELULARES — HASTA 600 PX
+========================================== */
+
 @media (max-width: 600px) {
-  .hero { padding: 65px 15px 75px; }
-  .hero h1 { font-size: clamp(54px, 11vw, 85px); margin-bottom: 14px; }
-  .hero h1 em { font-size: clamp(55px, 11.5vw, 95px); }
-   .hero .hero-title-second .gold-dot {
-      font-size: clamp(45px, 10vw, 65px);
-      margin-left: 5px;
-   }
-  .hero .hero-heart { font-size: 48px; }
-  .hero .hero-label { font-size: 9px; }
-  .hero .hero-inner > p { max-width: 360px; margin: 10px auto 20px; font-size: 16px; }
-  .hero .count-tag { max-width: 100%; padding: 10px 15px; }
-  .hero .primary-link { margin-top: 14px; }
-  .hero .hero-sign { margin-top: 28px; font-size: 36px; }
-  .hero .hero-spark { display: none; }
+  .hero {
+    padding: 65px 15px 75px;
+  }
+
+  .hero h1 {
+    font-size: clamp(54px, 11vw, 85px);
+    margin-bottom: 14px;
+  }
+
+  .hero h1 em {
+    font-size: clamp(55px, 11.5vw, 95px);
+  }
+
+  /* Mover Marilinda y corazón */
+  .hero-title-second {
+    transform: translateX(-15px);
+  }
+
+  /* Separación y tamaño del corazón */
+  .hero .hero-title-second .gold-dot {
+    font-size: clamp(45px, 10vw, 65px);
+    margin-left: 10px;
+  }
+
+  .hero .hero-heart {
+    font-size: 48px;
+  }
+
+  .hero .hero-label {
+    font-size: 9px;
+  }
+
+  .hero .hero-inner > p {
+    max-width: 360px;
+    margin: 10px auto 20px;
+    font-size: 16px;
+  }
+
+  .hero .count-tag {
+    max-width: 100%;
+    padding: 10px 15px;
+  }
+
+  .hero .primary-link {
+    margin-top: 14px;
+  }
+
+  .hero .hero-sign {
+    margin-top: 28px;
+    font-size: 36px;
+  }
+
+  .hero .hero-spark {
+    display: none;
+  }
+}
+
+/* ==========================================
+   CELULARES MEDIANOS — HASTA 480 PX
+========================================== */
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: clamp(48px, 11vw, 65px);
+  }
+
+  .hero h1 em {
+    font-size: clamp(48px, 11vw, 65px);
+  }
+
+  .hero-title-second {
+    transform: translateX(-12px);
+  }
+
+  .hero .hero-title-second .gold-dot {
+    font-size: clamp(40px, 9vw, 52px);
+    margin-left: 8px;
+  }
+}
+
+/* ==========================================
+   CELULARES PEQUEÑOS — HASTA 390 PX
+========================================== */
+
+@media (max-width: 390px) {
+  .hero h1 {
+    font-size: 47px;
+  }
+
+  .hero h1 em {
+    font-size: clamp(43px, 11vw, 48px);
+  }
+
+  .hero-title-second {
+    transform: translateX(-8px);
+  }
+
+  .hero .hero-title-second .gold-dot {
+    font-size: 38px;
+    margin-left: 6px;
+  }
+}
+
+/* ==========================================
+   CELULARES MUY PEQUEÑOS — HASTA 360 PX
+========================================== */
+
+@media (max-width: 360px) {
+  .hero {
+    padding-inline: 10px;
+  }
+
+  .hero h1 {
+    font-size: 43px;
+  }
+
+  .hero h1 em {
+    font-size: 40px;
+  }
+
+  .hero-title-second {
+    transform: translateX(-5px);
+  }
+
+  .hero .hero-title-second .gold-dot {
+    font-size: 34px;
+    margin-left: 5px;
+  }
+
+  .hero .hero-inner > p {
+    font-size: 14px;
+  }
+
+  .hero .hero-sign {
+    font-size: 30px;
+  }
 }
