@@ -370,10 +370,16 @@ p {
    NOSOTROS
 ========================================== */
 
+
+/* ==========================================
+   NOSOTROS
+========================================== */
+
 .people-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 32px;
+  align-items: start;
 }
 
 .person {
@@ -382,20 +388,47 @@ p {
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 14px 30px #7250340b;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.person:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 40px #72503420;
+}
+
+/* Fotografías verticales: 665 x 1182 */
 
 .person-image {
-  height: 310px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 665 / 1182;
   position: relative;
   background: #f4e4d8;
+  overflow: hidden;
 }
 
-.person-image > img,
-.memory-media > img {
-  height: 100%;
+.person-image > img {
+  display: block;
   width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  transition: transform 0.4s ease;
+}
+
+.person:hover .person-image > img {
+  transform: scale(1.025);
+}
+
+/* Imágenes de la galería */
+
+.memory-media > img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
+
+/* Imagen pendiente */
 
 .empty-photo {
   height: 100%;
@@ -410,9 +443,11 @@ p {
   font-size: 13px;
 }
 
+/* Decoración de cada fotografía */
+
 .person-sticker {
   position: absolute;
-  bottom: -18px;
+  bottom: 12px;
   right: 25px;
   background: #f7d79d;
   border-radius: 50%;
@@ -422,7 +457,10 @@ p {
   place-items: center;
   color: #9c7257;
   font-size: 26px;
+  z-index: 2;
 }
+
+/* Información personal */
 
 .person-info {
   padding: 30px;
@@ -445,6 +483,8 @@ p {
   font-size: 14px;
 }
 
+/* Dedicatoria */
+
 .dedication {
   text-align: center;
   max-width: 710px;
@@ -459,6 +499,7 @@ p {
   color: #7d6557;
   margin: 13px 0;
 }
+
 
 /* ==========================================
    NUESTRA HISTORIA
