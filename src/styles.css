@@ -1027,9 +1027,11 @@ p {
     grid-template-columns: 1fr;
   }
 
-  .person-image {
-    height: 240px;
-  }
+.person-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 665 / 1182;
+}
 
   .memory-media {
     height: 240px;
