@@ -1467,3 +1467,45 @@ position: relative;
   }
 }
 
+/* ==========================================
+   CENTRADO EXACTO DEL TÍTULO 💛
+========================================== */
+
+.hero-title-first,
+.hero-title-second {
+  display: block;
+}
+
+/* Centrar Marilinda sin contar el corazón */
+.hero-title-second {
+  position: relative;
+  width: fit-content;
+  max-width: 100%;
+  margin-inline: auto;
+}
+
+/* Corazón decorativo a la derecha */
+.hero-title-second .gold-dot {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+
+  margin-left: 12px;
+  font-size: 65px;
+  color: #FFE0A6;
+  line-height: 1;
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+  .hero-title-second .gold-dot {
+    font-size: 38px;
+    margin-left: 5px;
+  }
+
+  .hero h1 em {
+    font-size: clamp(58px, 12vw, 85px);
+  }
+}
+
