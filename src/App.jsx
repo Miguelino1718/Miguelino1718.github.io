@@ -227,10 +227,12 @@ export default function App() {
             <div className="hero-heart">♡</div>
 
             <h1>
-              Para mi
-              <br />
-              <em>Marilinda</em>
-              <span className="gold-dot">♡</span>
+              <span className="hero-title-first">Para mi</span>
+
+              <span className="hero-title-second">
+                <em>Marilinda</em>
+                <span className="gold-dot">♡</span>
+              </span>
             </h1>
 
 
