@@ -311,8 +311,8 @@ export default function App() {
             <RelationshipCounter />
 
             <div className="dedication">
-              <Heart size={22} fill="currentColor" />
               <p>{content.dedication}</p>
+              <Heart size={22} fill="currentColor" />
             </div>
 
           </div>
