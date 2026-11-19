@@ -112,19 +112,18 @@ p {
 ========================================== */
 
 .hero {
+position: relative;
+  width: 100%;
   min-height: calc(100svh - 72px);
-  position: relative;
+
   display: grid;
   place-items: center;
   text-align: center;
   overflow: hidden;
 
-  background:
-    radial-gradient(circle at 20% 15%, #fff9eb 0, transparent 35%),
-    radial-gradient(circle at 80% 80%, #f8dfe0 0, transparent 35%),
-    #fbf1e5;
-
   padding: 70px 20px 60px;
+
+  background: #241f2b;
 }
 
 .hero::before,
