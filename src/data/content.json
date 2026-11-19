@@ -7,13 +7,13 @@
     {
       "name": "Miguel",
       "tagline": "Demasiadas palabras, demasiados pensamientos.",
-      "description": "Un chico bastante conversador, bromista y experto en sobrepensar las cosas. Le encanta contar historias, el trading, los videojuegos y sacar sonrisas con sus ocurrencias. Aunque siempre tiene algo que decir, a veces le cuesta expresar lo que siente. Sobre todo cuando cierta chica anda cerca.",
+      "description": "Un chico bastante conversador, bromista y experto en sobrepensar las cosas. Le encanta contar historias, compartir sus gustos, disfrutar de los videojuegos y sacar sonrisas con sus ocurrencias. Siempre tiene algún tema del que hablar y una que otra tontería que contar. Aunque suele encontrar palabras para casi todo, cuando se trata de expresar lo que siente puede complicarse un poquito. Sobre todo cuando cierta chica anda cerca.",
       "image": "miguel.png"
     },
     {
       "name": "Mariana",
-      "tagline": "La Mariloca amante de los gatos.",
-      "description": "Una chica inteligente, divertida, cariñosa y con ese toque de locura que la hace tan especial. Le encanta el cosplay, los videojuegos, el anime, la música y compartir sus ocurrencias. Tiene una manera muy suya de hacer reír y convertir cualquier momento sencillo en algo inolvidable. A veces puede ser una loquita, pero es precisamente esa forma tan auténtica de ser la que terminó robándole el corazoncito a cierto chico.",
+      "tagline": "Demasiadas ocurrencias, demasiados gatitos.",
+      "description": "Una chica inteligente, divertida, cariñosa y con ese toque de locura que la hace tan especial. Le encantan el cosplay, los videojuegos, el anime, la música y compartir sus ocurrencias. Tiene una manera muy suya de hacer reír y convertir cualquier momento sencillo en algo inolvidable. A veces puede ser una loquilla, pero es precisamente esa forma tan auténtica de ser la que terminó robándole el corazoncito a cierto chico.",
       "image": "mari.png"
     }
   ],
