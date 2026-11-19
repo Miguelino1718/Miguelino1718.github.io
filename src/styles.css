@@ -1201,53 +1201,104 @@ position: relative;
 }
 
 
+
 /* ==========================================
-   TÍTULO ROMÁNTICO - ALEX BRUSH 💛
+   PORTADA ROMÁNTICA — GREAT VIBES 💛
 ========================================== */
 
-/* PARA MI — Marfil */
+/* Para mi */
 .hero h1 {
-  font-family: 'Alex Brush', cursive;
-  font-size: clamp(80px, 10vw, 140px);
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(80px, 9vw, 125px);
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0;
-  line-height: 1.15;
+  line-height: 1.2;
   color: #FFF4DF;
-  text-shadow: 0 3px 15px rgba(0, 0, 0, 0.7);
+  margin: 12px 0 22px;
+  text-shadow: 0 4px 18px rgba(0, 0, 0, .65);
 }
 
-/* MARILINDA — Rosa pastel */
+/* Marilinda */
 .hero h1 em {
-  font-family: 'Alex Brush', cursive;
-  font-size: clamp(90px, 11vw, 150px);
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(95px, 11vw, 150px);
   font-weight: 400;
   font-style: normal;
-  letter-spacing: 0;
-  line-height: 1.15;
   color: #FFD4E0;
-  text-shadow: 0 3px 15px rgba(0, 0, 0, 0.7);
+  text-shadow: 0 4px 18px rgba(0, 0, 0, .65);
 }
 
-/* Firma Miguel ♥ Mari */
+/* Corazón amarillo del título */
+.hero .gold-dot {
+  display: inline-block;
+  font-size: .32em;
+  vertical-align: middle;
+  color: #FFE0A6;
+  margin-left: 10px;
+}
+
+/* Descripción */
+.hero .hero-inner > p {
+  color: #FFF4DF;
+  font-size: 19px;
+  font-weight: 400;
+  max-width: 570px;
+  line-height: 1.65;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, .85);
+}
+
+/* Texto superior */
+.hero .hero-label {
+  color: #FFE0A6;
+  font-size: 12px;
+  letter-spacing: .22em;
+}
+
+/* Botón principal */
+.hero .primary-link {
+  background: #D99AAE;
+  color: #30243B;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, .22);
+}
+
+.hero .primary-link:hover {
+  background: #F1B7C8;
+  transform: translateY(-3px);
+}
+
+/* Contador */
+.hero .count-tag {
+  background: rgba(255, 248, 237, .95);
+  border: 1px solid #FFE0A6;
+  color: #785B4A;
+}
+
+/* Firma */
 .hero .hero-sign {
-  font-family: 'Alex Brush', cursive;
-  font-size: 42px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 46px;
   font-style: normal;
   color: #FFE0A6;
+  margin-top: 35px;
 }
 
-/* Ajustes para celulares */
+/* Adaptación a celulares */
 @media (max-width: 600px) {
   .hero h1 {
-    font-size: clamp(60px, 12vw, 85px);
+    font-size: clamp(58px, 12vw, 85px);
   }
 
   .hero h1 em {
-    font-size: clamp(70px, 14vw, 100px);
+    font-size: clamp(65px, 14vw, 100px);
+  }
+
+  .hero .hero-inner > p {
+    font-size: 16px;
   }
 
   .hero .hero-sign {
-    font-size: 32px;
+    font-size: 35px;
   }
 }
+
