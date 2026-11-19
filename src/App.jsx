@@ -228,7 +228,7 @@ export default function App() {
               <span className="hero-title-first">Para mi</span>
               <span className="hero-title-second">
                 <em>Marilinda</em>
-                <span className="gold-dot">♡</span>
+                <span className="gold-dot"> ♡</span>
               </span>
             </h1>
 
