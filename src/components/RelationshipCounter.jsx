@@ -2,37 +2,65 @@
 import { useEffect, useState } from "react";
 import "./RelationshipCounter.css";
 
-const START_DATE = new Date(2026, 10, 10);
+// Fecha oficial de nuestra relación
+// Año, mes (0-11), día, hora, minuto
+const START_DATE = new Date(2026, 10, 10, 0, 0);
 
 function calculateTimeTogether() {
-  const today = new Date();
+  const now = new Date();
 
-  let years = today.getFullYear() - START_DATE.getFullYear();
-  let months = today.getMonth() - START_DATE.getMonth();
-  let days = today.getDate() - START_DATE.getDate();
+  if (now < START_DATE) {
+    return { years: 0, months: 0, days: 0, hours: 0 };
+  }
 
-  if (days < 0) {
+  let years = now.getFullYear() - START_DATE.getFullYear();
+  let months = now.getMonth() - START_DATE.getMonth();
+
+  // Calcular años y meses completos
+  let anniversary = new Date(
+    START_DATE.getFullYear() + years,
+    START_DATE.getMonth() + months,
+    START_DATE.getDate(),
+    START_DATE.getHours(),
+    START_DATE.getMinutes()
+  );
+
+  while (anniversary > now) {
     months--;
 
-    const previousMonthDays = new Date(
-      today.getFullYear(),
-      today.getMonth(),
-      0
-    ).getDate();
+    if (months < 0) {
+      years--;
+      months += 12;
+    }
 
-    days += previousMonthDays;
+    anniversary = new Date(
+      START_DATE.getFullYear() + years,
+      START_DATE.getMonth() + months,
+      START_DATE.getDate(),
+      START_DATE.getHours(),
+      START_DATE.getMinutes()
+    );
   }
 
-  if (months < 0) {
-    years--;
-    months += 12;
+  // Días y horas desde el último mes completo
+  let days = 0;
+  let cursor = new Date(anniversary);
+
+  while (true) {
+    const next = new Date(cursor);
+    next.setDate(next.getDate() + 1);
+
+    if (next > now) break;
+
+    cursor = next;
+    days++;
   }
 
-  return {
-    years: Math.max(0, years),
-    months: Math.max(0, months),
-    days: Math.max(0, days),
-  };
+  const hours = Math.floor(
+    (now.getTime() - cursor.getTime()) / 3600000
+  );
+
+  return { years, months, days, hours };
 }
 
 export default function RelationshipCounter() {
@@ -41,10 +69,17 @@ export default function RelationshipCounter() {
   useEffect(() => {
     const interval = setInterval(() => {
       setTime(calculateTimeTogether());
-    }, 60000);
+    }, 30000);
 
     return () => clearInterval(interval);
   }, []);
+
+  const units = [
+    { value: time.years, label: "Años" },
+    { value: time.months, label: "Meses" },
+    { value: time.days, label: "Días" },
+    { value: time.hours, label: "Horas" },
+  ];
 
   return (
     <div className="relationship-counter">
@@ -60,19 +95,18 @@ export default function RelationshipCounter() {
       </p>
 
       <div className="relationship-time">
-        {[
-          { value: time.years, label: "Años" },
-          { value: time.months, label: "Meses" },
-          { value: time.days, label: "Días" },
-        ].map((item, index) => (
+        {units.map((item, index) => (
           <div
             className="relationship-unit"
             key={item.label}
-            style={{ animationDelay: `${index * 0.15}s` }}
+            style={{
+              animationDelay: `${index * 0.15}s`,
+            }}
           >
             <strong>
               {String(item.value).padStart(2, "0")}
             </strong>
+
             <span>{item.label}</span>
           </div>
         ))}
