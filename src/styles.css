@@ -1200,12 +1200,14 @@ position: relative;
   .hero .hero-sign { margin-top: 26px; }
 }
 
+
 /* ==========================================
-   TIPOGRAFÍA ROMÁNTICA DEL BANNER 💛
-   Para mi: marfil / Marilinda: rosa pastel
+   TÍTULO ROMÁNTICO - ALEX BRUSH 💛
 ========================================== */
+
+/* PARA MI — Marfil */
 .hero h1 {
-  font-family: 'Allura', cursive;
+  font-family: 'Alex Brush', cursive;
   font-size: clamp(80px, 10vw, 140px);
   font-weight: 400;
   font-style: normal;
@@ -1215,8 +1217,9 @@ position: relative;
   text-shadow: 0 3px 15px rgba(0, 0, 0, 0.7);
 }
 
+/* MARILINDA — Rosa pastel */
 .hero h1 em {
-  font-family: 'Allura', cursive;
+  font-family: 'Alex Brush', cursive;
   font-size: clamp(90px, 11vw, 150px);
   font-weight: 400;
   font-style: normal;
@@ -1226,22 +1229,25 @@ position: relative;
   text-shadow: 0 3px 15px rgba(0, 0, 0, 0.7);
 }
 
-.hero .hero-label { color: #FFF4DF; }
-.hero .hero-inner > p { color: #F8EDEB; }
-.hero .hero-bottom { color: #FFF4DF; }
-.hero .hero-heart, .hero .hero-sign span { color: #F6B9CB; }
-.hero .gold-dot { color: #FFE0A6; }
-
+/* Firma Miguel ♥ Mari */
 .hero .hero-sign {
-  font-family: 'Allura', cursive;
+  font-family: 'Alex Brush', cursive;
   font-size: 42px;
   font-style: normal;
   color: #FFE0A6;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.8);
 }
 
+/* Ajustes para celulares */
 @media (max-width: 600px) {
-  .hero h1 { font-size: clamp(60px, 12vw, 85px); }
-  .hero h1 em { font-size: clamp(70px, 14vw, 100px); }
-  .hero .hero-sign { font-size: 32px; }
+  .hero h1 {
+    font-size: clamp(60px, 12vw, 85px);
+  }
+
+  .hero h1 em {
+    font-size: clamp(70px, 14vw, 100px);
+  }
+
+  .hero .hero-sign {
+    font-size: 32px;
+  }
 }
