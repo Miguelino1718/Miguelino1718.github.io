@@ -6,15 +6,15 @@
   "people": [
     {
       "name": "Miguel",
-      "tagline": "El que quiso guardar cada recuerdo bonito.",
-      "description": "Aquí puedes escribir una pequeña descripción de ti.",
-      "image": ""
+      "tagline": "Demasiadas palabras, demasiados pensamientos.",
+      "description": "Un chico bastante conversador, bromista y experto en sobrepensar las cosas. Le encanta contar historias, el trading, los videojuegos y sacar sonrisas con sus ocurrencias. Aunque siempre tiene algo que decir, a veces le cuesta expresar lo que siente. Sobre todo cuando cierta chica anda cerca.",
+      "image": "miguel.png"
     },
     {
-      "name": "Mari",
-      "tagline": "La Mariloca que hace más bonitos los días.",
-      "description": "Aquí puedes escribir las cosas que más admiras de Mari.",
-      "image": ""
+      "name": "Mariana",
+      "tagline": "La Mariloca amante de los gatos.",
+      "description": "Una chica inteligente, divertida, cariñosa y con ese toque de locura que la hace tan especial. Le encanta el cosplay, los videojuegos, el anime, la música y compartir sus ocurrencias. Tiene una manera muy suya de hacer reír y convertir cualquier momento sencillo en algo inolvidable. A veces puede ser una loquita, pero es precisamente esa forma tan auténtica de ser la que terminó robándole el corazoncito a cierto chico.",
+      "image": "mari.png"
     }
   ],
   "timeline": [
