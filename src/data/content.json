@@ -88,10 +88,10 @@
   "songs": [
     {
       "id": "s1",
-      "title": "Nuestra primera canción",
-      "artist": "Agrega aquí el artista",
+      "title": "Can't Help Falling in Love",
+      "artist": "Elvis Presley",
       "url": "",
-      "note": "Cuéntale por qué esta canción te recuerda a ella."
+      "note": "Mari me dedico esta canción en piano."
     }
   ],
   "wishes": [
