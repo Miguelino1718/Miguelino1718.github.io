@@ -55,50 +55,52 @@
     "image": ""
   }
 ],
-  "gallery": [
-    {
-      "id": "g1",
-      "title": "Carta de confesión",
-      "type": "photo",
-      "src": "",
-      "caption": "La primera carta que te escribí confensando lo que sentia."
-    },
-    {
-      "id": "g2",
-      "title": "Trend de valorant Six Seven Papoi",
-      "type": "photo",
-      "src": "",
-      "caption": "Compilación de fotos para el trend del duo del valorant jsjsjs."
-    }
-    {
-      "id": "g3",
-      "title": "¿Por qué te amo? ",
-      "type": "photo",
-      "src": "",
-      "caption": "Carta dedicada a explicar por qué amo a Mari."
-    }
-    {
-      "id": "g4",
-      "title": "Boys Over Flowers",
-      "type": "photo",
-      "src": "",
-      "caption": "Los 2 viendo la serie por discord."
-    }
-    {
-      "id": "g5",
-      "title": "Tiktok Stress relief x Harvey",
-      "type": "photo",
-      "src": "",
-      "caption": "Edición para tik tok del trend Stress relief x Harvey."
-    }
-    {
-      "id": "g6",
-      "title": "Te amo",
-      "type": "photo",
-      "src": "",
-      "caption": "Carta de Mari explicando su amor."
-    }
-  ],
+
+"gallery": [
+  {
+    "id": "g1",
+    "title": "Carta de confesión",
+    "type": "photo",
+    "src": "",
+    "caption": "La primera carta que te escribí confensando lo que sentia."
+  },
+  {
+    "id": "g2",
+    "title": "Trend de valorant Six Seven Papoi",
+    "type": "photo",
+    "src": "",
+    "caption": "Compilación de fotos para el trend del duo del valorant jsjsjs."
+  },
+  {
+    "id": "g3",
+    "title": "¿Por qué te amo? ",
+    "type": "photo",
+    "src": "",
+    "caption": "Carta dedicada a explicar por qué amo a Mari."
+  },
+  {
+    "id": "g4",
+    "title": "Boys Over Flowers",
+    "type": "photo",
+    "src": "",
+    "caption": "Los 2 viendo la serie por discord."
+  },
+  {
+    "id": "g5",
+    "title": "Tiktok Stress relief x Harvey",
+    "type": "photo",
+    "src": "",
+    "caption": "Edición para tik tok del trend Stress relief x Harvey."
+  },
+  {
+    "id": "g6",
+    "title": "Te amo",
+    "type": "photo",
+    "src": "",
+    "caption": "Carta de Mari explicando su amor."
+  }
+],
+
   "letters": [
     {
       "id": "c1",
