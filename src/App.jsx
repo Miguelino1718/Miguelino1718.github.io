@@ -205,16 +205,6 @@ export default function App() {
 
         <section className="hero" id="inicio">
 
-          {/* FOTOGRAFÍA DE MIGUEL Y MARI */}
-
-          <div className="hero-photo">
-            <img
-              src={`${import.meta.env.BASE_URL}Banner.png`}
-              alt="Miguel y Mari, unidos por la música"
-            />
-          </div>
-
-
           <div className="hero-spark s1">✦</div>
           <div className="hero-spark s2">✧</div>
 
@@ -228,14 +218,20 @@ export default function App() {
 
             <h1>
               <span className="hero-title-first">Para mi</span>
-
               <span className="hero-title-second">
                 <em>Marilinda</em>
                 <span className="gold-dot">♡</span>
               </span>
             </h1>
 
+            {/* FOTOGRAFÍA DE MIGUEL Y MARI */}
 
+            <div className="hero-photo">
+              <img
+                src={`${import.meta.env.BASE_URL}Banner.png`}
+                alt="Miguel y Mari, unidos por la música"
+              />
+            </div>
 
             <p>{content.subtitle}</p>
 
